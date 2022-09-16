@@ -10,7 +10,7 @@ ul{
 
 body{
     background-image: url(./assets/bg1.webp);
-    background-position: top;
+    background-position: top ;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: black;
@@ -33,12 +33,13 @@ header{
 header div{
     width: 150px;
     display: flex;
+    margin: auto;
+   
 
     
 
     background-image: linear-gradient(90deg, #ffffff 0%, #010977 50.52%, #ff0000 100%);
     border-radius: 50%;
-    display: flex;
     padding: 4px;
 
     transition: transform .3s;
@@ -52,15 +53,19 @@ header div:hover {
 header img {
     width: 100%;
     border-radius: 50%;
+    flex-wrap: wrap;
 }
 
 main{    
-    display: inline-flex;
-    float: right;
-    position: fixed; top: 20px; right: 20px;
+    display: flex;
+    max-width: 1500px;
+    width: 90%;
+    margin-left: auto;
+    margin-bottom: auto;
+    flex-wrap: wrap;
+    padding-top: 20px;
 
     gap: 24px;
-    margin-right: 0px;
 }
 
 section {
@@ -160,15 +165,15 @@ main section{
 }
 
 main section:nth-child(1){
-    animation-delay: .6s;
+    animation-delay: 1s;
 }
 
 main section:nth-child(2){
-    animation-delay: .9s;
+    animation-delay: 1.3s;
 }
 
 main section:nth-child(3){
-    animation-delay: 1.2s;
+    animation-delay: 1.6s;
 }
 
 
@@ -189,13 +194,13 @@ main section:nth-child(3){
 @keyframes fromLeft{
     from{
         opacity: 0;
-        transform: translateX(-30px);
+        transform: translateY(-30px);
         
     }
 
     to{
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
 
     }
 }
